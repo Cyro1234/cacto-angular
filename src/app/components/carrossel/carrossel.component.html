@@ -1,0 +1,17 @@
+<div class="overflow-hidden relative w-full h-[500px] max-lg:h-[400px] max-sm:h-[300px] max-[550px]:h-[200px]">
+    <div class="flex transition-transform ease-out duration-500 w-full h-full" [ngStyle]="{ transform: transform, width: slides.length * 100 + '%' }">
+        <div *ngFor="let slide of slides; let index = index" class="flex-shrink-0 w-full" [ngStyle]="tamanhoImagem">
+            <img [src]="slide" [alt]="'Slide ' + (index + 1)" class="w-full h-full object-cover object-center" />
+        </div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-between p-4">
+        <button (click)="voltar()" [ngClass]="configBotao">
+            <!-- colocar icone da seta -->
+            <span>&lt;</span>
+        </button>
+        <button (click)="avancar()" [ngClass]="configBotao">
+            <!-- colocar icone da seta -->
+            <span>&gt;</span>
+        </button>
+    </div>
+</div>
