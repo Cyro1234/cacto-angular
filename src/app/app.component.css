@@ -1,0 +1,9 @@
+:host .conteudo {
+    position: relative;
+    z-index: 4; /* Ajuste o valor conforme necessário */
+    
+}
+
+:host .cards {
+    gap: 50px;
+}

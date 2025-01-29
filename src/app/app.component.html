@@ -1,3 +1,23 @@
+<app-navbar [cor]="CoresCustomizadas.verde()"></app-navbar>
+<div class="md:hidden">
+    <app-navbar [cor]="CoresCustomizadas.verde()" logo="false" icon="false" searchMD="true"></app-navbar>
+</div>
 <app-carrossel [slides]="slides"></app-carrossel>
-<app-card></app-card>
+<div class="conteudo mt-[-100px] max-[550px]:mt-[-50px]">
+    <div>
+        <div class="py-4">
+            <h1 class='bg-white inline-block px-2 py-1 rounded text-3xl drop-shadow-lg mx-10 max-[550px]:mx-5'>Mais Procurados</h1>
+        </div>
+        <div class='grid grid-cols-5 gap-[50px] px-1 w-[80%] mx-auto max-2xl:w-[90%] max-xl:w-[95%] max-[1180px]:grid-cols-4 max-lg:grid-cols-3 max-md:w-[75%] max-md:gap-[25px] max-lg:w-[80%] max-sm:w-[90%] max-sm:grid-cols-2'>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            
+          </div>
+    </div>
+</div>
 <router-outlet />

@@ -1,0 +1,33 @@
+<header class="py-1" [style.backgroundColor]="getCor()">
+    <nav class="flex justify-between items-center w-[95%] mx-auto">
+      <div class='flex justify-between items-center w-full md:w-auto'>
+        <button class="md:hidden" [ngClass]="temIcone">
+          <app-icone icone="usuario"></app-icone>
+        </button>
+        <img class="w-44 mx-auto md:mx-0" [ngClass]="temLogo" [src]="logoSite" alt="Logo" />
+        <div [ngClass]="temSearchMD + ' md:hidden mx-auto'" style="width: 75%;">
+          <app-pesquisa></app-pesquisa>
+        </div>
+        <button class="md:hidden" [ngClass]="temIcone">
+          <app-icone icone="carrinho"></app-icone>
+        </button>
+      </div>
+      <div [ngClass]="temSearchMD + ' max-md:hidden'" style="width: 25%;">
+        <app-pesquisa></app-pesquisa>
+      </div>
+      <div class='hidden md:flex md:items-center md:gap-[4vw]'>
+        <ul class="flex md:flex-row flex-col items-center" [ngClass]="temGapIcon">
+          <li>
+            <button class="align-middle" [ngClass]="temIcone">
+              <app-icone icone="carrinho"></app-icone>
+            </button>
+          </li>
+          <li>
+            <button class="align-middle" [ngClass]="temIcone">
+              <app-icone icone="usuario"></app-icone>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>

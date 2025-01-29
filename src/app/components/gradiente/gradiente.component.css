@@ -1,0 +1,9 @@
+:host {
+    bottom: 0;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background: linear-gradient(180deg, transparent, #ebebeb);
+}

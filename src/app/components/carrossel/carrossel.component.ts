@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { GradienteComponent } from '../gradiente/gradiente.component';
 
 @Component({
   selector: 'app-carrossel',
-  imports: [CommonModule],
+  imports: [CommonModule, GradienteComponent],
   templateUrl: './carrossel.component.html',
   styleUrl: './carrossel.component.css'
 })
